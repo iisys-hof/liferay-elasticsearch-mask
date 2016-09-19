@@ -1,0 +1,14 @@
+Bundle-SymbolicName: elasticsearch.mask
+
+Bundle-Version: 1.0.0.${tstamp}
+
+Import-Package: \
+	javax.portlet;version='[2.0,3)',\
+	javax.servlet;version='[2.5,4)',\
+	*
+
+Private-Package: \
+	de.hofuniversity.iisys.liferay.search
+
+-includeresource:\
+	META-INF/resources=src/main/resources/META-INF/resources

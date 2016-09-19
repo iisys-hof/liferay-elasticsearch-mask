@@ -1,0 +1,13 @@
+dependencies {
+	compile 'com.liferay.portal:portal-service:7.0.0-SNAPSHOT'
+	compile 'javax.portlet:portlet-api:2.0'
+	compile 'javax.servlet:servlet-api:2.5'
+	compile 'org.osgi:org.osgi.compendium:5.0.0'
+	compile 'com.liferay:com.liferay.portal.osgi.web.servlet.jsp.compiler:1.0.6'
+	compile 'com.liferay.portal:com.liferay.util.java:1.0.0'
+	compile 'com.liferay.portal:com.liferay.portal.kernel:2.3.0'
+	compile 'com.liferay.portal:portal-kernel:5.2.3'
+	compile 'com.liferay.portal:portal-web:7.0.0-b8'
+}
+
+version = '1.0.0'

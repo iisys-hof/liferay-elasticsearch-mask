@@ -1,0 +1,180 @@
+/* CSS order:
+ * (via https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
+ *
+ * - positioning (position, z-index, top, left, ...)
+ * - display & box model (display, width, padding, border, margin,...)
+ * - color
+ * - text
+ * - other (cursor,...)
+ *
+ */
+
+.elasticsearchmaskwrapper {
+
+	/* results */
+
+	.result {
+
+/*		.card-row {
+			min-height: 167px; height:167px;
+		}
+		.card-row-small { min-height: 117px; height: 117px; } */
+		.result-main-part {
+			max-width: 0; /* for text-overflow on title */
+			padding: 1em;
+			vertical-align: top;
+			word-break: normal;
+		}
+		.result-title {
+			margin: 0px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-size: 1.2em;
+		}
+		.result-title a { color: #3e9b52; }
+
+		.card-row-small .result-title { font-style: italic; }
+
+		.result-main-part .author {
+			display: inline-block;
+			margin-top: 5px; margin-bottom: 0;
+		}
+		.author-link { color: #333; }
+		.author-link .popup-user {
+			display: none;
+			position: absolute;
+			width: 50px; height: 50px;
+			top: 0;
+			z-index: 999;
+			border-radius: 100%;
+			border: 2px solid #3e9b52;
+		}
+		.author-link .popup-user .popup-user-inner {
+			overflow: hidden;
+			width: 100%; height: 100%;
+			border-radius: 100%;
+		}
+		.author-link:hover .popup-user { display: block; }
+		.author-link .popup-user:before {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%; margin-left: -7px;
+			border: solid;
+			border-color: #3e9b52 transparent;
+			border-width: 7px 7px 0 7px;
+			display: block;
+		}
+
+		.metadata { color: #999; }
+		.content-preview, .description-preview { overflow: hidden; }
+		.content-preview { max-height: 2.6em;	}
+		.description-preview { max-height: 1.5em; }
+
+		.result-icon-part {
+			text-align: center;
+			vertical-align: top;
+			padding-top: 1em;
+		}
+
+		.result-image-part { background-color: #869CAD; }
+		.image-wrapper {
+			max-height: 167px;
+			overflow: hidden;
+		}
+		.img-person {
+			height: 100%;
+			width: auto;
+		}
+
+		.description i { margin-right: 0.5em; }
+
+		/* stickers */
+
+		.filetype-bonbon {
+			padding: 0.06em 0.3em;
+			border-radius: 3px;
+			color: #fff;
+			background-color: #869cad;
+		}
+
+		.filetype-sticker {
+			position: relative;
+			top: 0; left: 0;
+			background-color: #f5f7f8;
+		}
+		.filetype-activity { background-color: #869CAD; }
+		.filetype-image { background-color: #FF9900; }
+		.filetype-liferay { background-color: #79B3E2; }
+		.filetype-mail { background-color: #D68E0B; }
+		.filetype-message { background-color: #0083FF; }
+		.filetype-person { background-color: #E7F1F9; color:#869cad; }
+		
+		.filetype-doc { background-color: #33529E; }
+		.filetype-pdf { background-color: #EE2F21; }
+		.filetype-ppt { background-color: #D04423; }
+		.filetype-xls { background-color: #1D7044; }
+
+		.system-sticker {
+			display: inline-block;
+			color: #869cad;
+			font-size: 32px;
+		}
+
+		.usericon-sticker {
+			display: inline-block;
+			margin-top: 16px;
+			color: #333;
+			background-color: #f5f7f8;
+		}
+	}
+
+	/* facets sidebar */
+
+	.facet-sidebar a:hover {
+		text-decoration: none;
+	}
+
+	.facet-sidebar a small, .facet-sidebar a .facet-available { color: #869CAD; }
+	.facet-sidebar a:hover small, .facet-sidebar a:hover .facet-available { color: #65B6F0; }
+
+	.nav-tabs > li.active > a { cursor: auto; }
+
+	.facet-nav {
+		border-bottom: 1px solid #d8d8d8;
+	}
+	.facet-nav > li {
+		float:left;
+		margin-bottom: -1px;
+	}
+	.facet-nav > li:first-child > a {
+		margin-left: 0;
+	}
+	.facet-nav > li > a {
+		margin-right: 2px;
+		line-height: 1.42857;
+		border: 1px solid transparent;
+		border-radius: 4px 4px 0 0;
+	}
+	.nav > li > a {
+		padding:10px 12px;
+	}
+
+	.facet-filetype-icon {
+		font-size: 24px;
+	}
+
+	.facet-default, .facet-filetype-icon { color: #EDEDED; }
+	.facet-available { color: #869CAD; }
+	.facet-active { color: #65B6F0; }
+
+	.facet-active-border { border: 1px solid #65B6F0; }
+
+	#facet_all-filetypes { display: none; }
+
+	.nameplate-label-default:hover {
+		background-color: #65B6F0;
+		color: #FFFFFF;
+	}
+}
